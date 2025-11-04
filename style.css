@@ -1,0 +1,62 @@
+.exercise_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.button1 {
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.exercise4_box {
+  display: grid;
+  justify-content: center;
+  gap: 1vw;
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: 600px 200px;
+  grid-template-areas:
+    "expand expand expand"
+    "first second third";
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expanded_img {
+  grid-area: expand;
+}
+
+.first {
+  grid-area: first;
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
+}
